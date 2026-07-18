@@ -54,6 +54,7 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 /* Event Details menyesuaikan tema oranye */
@@ -170,6 +171,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 /* Form RSVP */
@@ -277,4 +279,27 @@ body {
     margin-bottom: 15px;
     font-size: 14px;
     border: 1px solid #c3e6cb;
+}
+.btn-stats {
+    background-color: #f37021;
+    color: white;
+    border: none;
+    padding: 6px 12px;        /* Dikecilkan (sebelumnya 10px 15px) */
+    border-radius: 6px;       /* Lekukan sudut diperkecil */
+    cursor: pointer;
+    width: fit-content;       /* Lebar mengikuti teks, tidak full 100% */
+    display: block;           /* Supaya bisa diatur posisinya */
+    margin: 0 auto 10px auto; /* Membuat tombol rapi di tengah halaman */
+    font-weight: 600;
+    font-size: 14px;          /* Ukuran teks diperkecil */
+}
+
+.stats-box {
+    background-color: #fffaf7;
+    border: 1px solid #f37021;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
 }
