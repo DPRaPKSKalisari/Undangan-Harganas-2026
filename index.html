@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan HARGANAS 2026 - DPRA PKS Kalisari</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link ke file CSS terpisah -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section (Gambar Banner) -->
+        <div class="hero">
+            <img src="image/Banner.jpeg" alt="Poster Hari Keluarga Nasional 2026">
+        </div>
+
+        <div class="content">
+            <p class="salam">Assalamu’alaikum Warahmatullahi Wabarakatuh.</p>
+            <p class="description">
+                Dalam rangka memperingati <strong>Hari Keluarga Nasional (HARGANAS) 2026</strong>, DPRA Kalisari mengundang seluruh Kader dan Simpatisan PKS Dpra Kalisari beserta keluarga untuk hadir dan meramaikan kegiatan Nobar.
+            </p>
+
+            <!-- Event Details -->
+            <div class="event-details">
+                <div class="event-item">
+                    <i class="far fa-calendar-alt"></i>
+                    <div class="event-text">
+                        <h4>Hari / Tanggal</h4>
+                        <p>Sabtu, 25 Juli 2026</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <i class="far fa-clock"></i>
+                    <div class="event-text">
+                        <h4>Waktu</h4>
+                        <p>08.00 - 10.00 WIB</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="event-text">
+                        <h4>Lokasi</h4>
+                        <p>Aula SIT Insan Mandiri Kalisari</p>
+                    </div>
+                </div>
+                
+                <!-- Tampilan Embed Google Maps -->
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.405049230541!2d106.85178407356135!3d-6.341554893648183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec528a21cc2b%3A0xbe6906dab9da8197!2sSDIT-SMPIT%20INSAN%20MANDIRI%20KALISARI!5e0!3m2!1sen!2sid!4v1784360066528!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                
+                <!-- Tombol Link Google Maps di Tengah -->
+                <div class="map-btn-container">
+                    <a href="https://maps.app.goo.gl/bhLf6LumiAte9fx77?g_st=aw" target="_blank" class="btn-map"><i class="fas fa-location-arrow"></i> Buka di Google Maps</a>
+                </div>
+            </div>
+
+            <!-- Activities -->
+            <div class="activities">
+                <h3>✨ Yang Bisa Dinikmati:</h3>
+                <ul>
+                    <li>🎥 Nobar Film Keluarga</li>
+                    <li>🎙️ Keluarga Bercerita</li>
+                    <li>🎉 Games & Aktivitas Seru Keluarga</li>
+                    <li>🛍️ Bazaar UMKM</li>
+                </ul>
+            </div>
+
+            <div class="message-box">
+                Mari manfaatkan momen ini untuk nonton film keluarga bersama dan keluarga bercerita untuk mempererat kebersamaan keluarga, sekaligus mendukung UMKM kader.<br><br>
+                <strong>💪 Ajak pasangan, anak, dan seluruh keluarga tercinta.</strong><br>
+                Mari wujudkan keluarga yang sehat, bahagia, dan penuh semangat.
+            </div>
+        </div>
+
+        <!-- RSVP Form Section -->
+        <div class="rsvp-section" id="rsvp">
+            <h3>📲 Konfirmasi Kehadiran</h3>
+            
+            <div id="alert-success" class="alert-success">
+                Terima kasih! Konfirmasi kehadiran Anda berhasil dikirim.
+            </div>
+
+            <!-- Form RSVP -->
+            <form name="submit-to-google-sheet" id="rsvp-form">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="no_hp">No HP</label>
+                    <input type="tel" id="no_hp" name="no_hp" placeholder="Contoh: 0812xxxxxx" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap Anda" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah_anggota">Jumlah anggota yang hadir</label>
+                    <input type="number" id="jumlah_anggota" name="jumlah_anggota" placeholder="Contoh: 3 orang" min="1" max="3" required>
+                    <small class="hint-text">*Maksimal 3 orang, Contoh: 3 (saya + suami/istri + 1 anak)</small>
+                </div>
+                <button type="submit" class="btn-submit" id="btn-submit">Kirim Konfirmasi</button>
+            </form>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <p><strong>Contact Person:</strong></p>
+            <p>👩 Susi | <a href="https://wa.me/6281280476116" target="_blank"><i class="fab fa-whatsapp"></i> 0812-8047-6116</a></p>
+            <p style="margin-top: 15px;">🧡 Kami tunggu kehadiran Ayah, Bunda, dan keluarga!</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2026 DPRA PKS Kalisari
+        </div>
+    </div>
+
+    <!-- Link ke file JavaScript terpisah -->
+    <script src="script.js"></script>
+</body>
+</html>
