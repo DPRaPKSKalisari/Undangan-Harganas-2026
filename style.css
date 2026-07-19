@@ -81,7 +81,16 @@ body {
 .logo-3 {
     width: 75px; /* Silakan ubah angka ini */
 }
-
+/* Pengaturan untuk Judul Besar */
+.main-title {
+    text-align: center;
+    font-size: 26px;            /* Ukuran huruf, silakan besarkan/kecilkan jika perlu */
+    color: #f37021;             /* Warna oranye sesuai tema */
+    font-weight: 800;           /* Ketebalan huruf (bold) */
+    margin-bottom: 20px;        /* Jarak antara judul dengan teks Assalamu'alaikum */
+    margin-top: 10px;           /* Jarak antara judul dengan box logo di atasnya */
+    line-height: 1.3;           /* Jarak spasi antar baris jika judulnya turun ke bawah */
+}
 .salam {
     font-weight: 600;
     color: var(--text-dark);
