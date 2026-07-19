@@ -85,7 +85,7 @@ body {
 .main-title {
     font-family: "Times New Roman", Times, serif; /* Mengubah font menjadi Times New Roman */
     text-align: center;
-    font-size: 25px;            /* Sedikit dibesarkan agar Times New Roman terlihat lebih proporsional */
+    font-size: 28px;            /* Sedikit dibesarkan agar Times New Roman terlihat lebih proporsional */
     color: #cc5500;             /* Warna oranye gelap */
     font-weight: 800;           
     margin-bottom: 20px;        
