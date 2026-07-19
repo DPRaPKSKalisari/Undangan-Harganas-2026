@@ -83,13 +83,14 @@ body {
 }
 /* Pengaturan untuk Judul Besar */
 .main-title {
+    font-family: "Times New Roman", Times, serif; /* Mengubah font menjadi Times New Roman */
     text-align: center;
-    font-size: 26px;            /* Ukuran huruf, silakan besarkan/kecilkan jika perlu */
-    color: #f37021;             /* Warna oranye sesuai tema */
-    font-weight: 800;           /* Ketebalan huruf (bold) */
-    margin-bottom: 20px;        /* Jarak antara judul dengan teks Assalamu'alaikum */
-    margin-top: 10px;           /* Jarak antara judul dengan box logo di atasnya */
-    line-height: 1.3;           /* Jarak spasi antar baris jika judulnya turun ke bawah */
+    font-size: 20px;            /* Sedikit dibesarkan agar Times New Roman terlihat lebih proporsional */
+    color: #cc5500;             /* Warna oranye gelap */
+    font-weight: 800;           
+    margin-bottom: 20px;        
+    margin-top: 10px;           
+    line-height: 1.3;           
 }
 .salam {
     font-weight: 600;
