@@ -278,6 +278,24 @@ body {
     margin-top: 5px;
     font-style: italic;
 }
+/* Pengaturan teks batas akhir pendaftaran */
+.deadline-text {
+    font-size: 13px;
+    color: #cc5500;             /* Menggunakan warna oranye gelap agar mencolok tapi senada */
+    text-align: center;         /* Posisinya di tengah */
+    margin-top: 15px;           /* Jarak dari elemen di atasnya */
+    margin-bottom: 20px;        /* Jarak dengan tombol kirim di bawahnya */
+    font-weight: 600;           /* Huruf ditebalkan */
+    background-color: #fffaf7;  /* Latar belakang kotak tipis */
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px dashed #f37021; /* Garis putus-putus sebagai penanda penting */
+}
+
+/* Mengatur ukuran ikon di dalam teks deadline */
+.deadline-text i {
+    margin-right: 5px;
+}
 
 .btn-submit {
     width: 100%;
