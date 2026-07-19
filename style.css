@@ -42,6 +42,45 @@ body {
     padding: 30px 20px;
     text-align: center;
 }
+/* Container untuk menyejajarkan 3 Logo */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Menengahkan logo */
+    align-items: center;     /* Meratakan tinggi logo secara vertikal */
+    gap: 20px;               /* Jarak spasi antar logo */
+    margin-bottom: 25px;
+    margin-top: 5px;
+    
+    /* --- KODE TAMBAHAN UNTUK MEMBUAT BOX --- */
+    background-color: #fffaf7;  /* Warna latar belakang box (oranye sangat muda) */
+    padding: 15px 20px;         /* Jarak ruang di dalam box (atas/bawah 15px, kiri/kanan 20px) */
+    border-radius: 15px;        /* Membuat sudut box melengkung */
+    border: 2px solid #bb4500;  /* Garis pinggir box */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Efek bayangan lembut di bawah box */
+}
+
+/* Pengaturan umum agar semua logo tidak gepeng */
+.logo-container img {
+    height: auto;
+    object-fit: contain;
+}
+
+/* --- PENGATURAN MASING-MASING LOGO --- */
+
+/* Logo 1 (Paling Kiri) */
+.logo-1 {
+    width: 68px; /* Silakan ubah angka ini */
+}
+
+/* Logo 2 (Tengah) - Biasanya logo utama dibuat sedikit lebih besar */
+.logo-2 {
+    width: 50px; /* Silakan ubah angka ini */
+}
+
+/* Logo 3 (Paling Kanan) */
+.logo-3 {
+    width: 75px; /* Silakan ubah angka ini */
+}
 
 .salam {
     font-weight: 600;
@@ -266,7 +305,7 @@ body {
     background-color: #d95e1a;
     color: rgb(10, 10, 10);
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
 }
 
