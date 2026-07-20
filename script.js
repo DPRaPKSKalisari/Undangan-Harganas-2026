@@ -77,3 +77,40 @@ async function toggleStats() {
         btn.innerHTML = "📊 Lihat Statistik Peserta";
     }
 }
+// --- LOGIKA COUNTDOWN BATAS AKHIR PENDAFTARAN ---
+// Set target waktu akhir pendaftaran (23 Juli 2026 jam 23:59:59 WIB)
+const deadlineDate = new Date("July 23, 2026 23:59:59 GMT+0700").getTime();
+
+const countdownInterval = setInterval(() => {
+  const now = new Date().getTime();
+  const distance = deadlineDate - now;
+
+  // Jika waktu hitung mundur selesai / habis
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    document.getElementById("countdown").style.display = "none";
+    document.getElementById("countdown-expired").style.display = "block";
+    
+    // Otomatis kunci/kancing tombol submit pendaftaran
+    const btnSubmit = document.getElementById('btn-submit');
+    if (btnSubmit) {
+      btnSubmit.innerHTML = "Pendaftaran Ditutup";
+      btnSubmit.disabled = true;
+      btnSubmit.style.backgroundColor = "#ccc";
+      btnSubmit.style.cursor = "not-allowed";
+    }
+    return;
+  }
+
+  // Perhitungan waktu untuk Hari, Jam, Menit, dan Detik
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Suntik hasil angka ke elemen HTML (tambahkan angka 0 di depan jika di bawah 10)
+  document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+  document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+  document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+  document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+}, 1000);
