@@ -297,6 +297,50 @@ body {
     margin-right: 5px;
 }
 
+/* --- STYLE TAMBAHAN UNTUK COUNTDOWN --- */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.countdown-item {
+    background-color: #fffaf7;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 55px;
+    box-shadow: 0 2px 8px rgba(243, 112, 33, 0.1);
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.countdown-item small {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.countdown-expired {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    font-size: 14px;
+}
+
 .btn-submit {
     width: 100%;
     background-color: var(--primary-color);
